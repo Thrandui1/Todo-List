@@ -1,0 +1,127 @@
+@import './normalize.css';
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 0 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+}
+body .container .container__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+body .container .container__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: decimal;
+  gap: 5px;
+}
+body .container .container__list .container-list__string {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: space-between;
+  gap: 8px;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+body .container .container__list .container-list__string .string-left {
+  display: flex;
+  gap: 10px;
+}
+body .container .container__list .container-list__string .string-left .string-span .span-done {
+  text-decoration: line-through;
+  color: rgb(221, 221, 221);
+}
+body .container .container__list .container-list__string .string-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .container .container__list .container-list__string button {
+  cursor: pointer;
+}
+body .container .container__list .container-list__string button svg {
+  pointer-events: none;
+}
+body .container .container__input {
+  display: flex;
+  justify-content: center;
+  width: 99%;
+  margin-top: 50px;
+}
+body .container .container__input input {
+  width: 70%;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 3px;
+  height: 25px;
+  padding-left: 5px;
+}
+body .container .container__input input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #14a800;
+  border-radius: 3px;
+  border: 1px solid rgb(221, 221, 221);
+}
+body .container .container__input input:focus::-moz-placeholder {
+  opacity: 0;
+}
+body .container .container__input input:focus::placeholder {
+  opacity: 0;
+}
+body .container .container__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body .container .container__button button {
+  padding: 7px 15px;
+  background-color: #14a800;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+body .container .container__button button:hover {
+  cursor: pointer;
+  background-color: #22c40d;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+  .container__list {
+    width: 95%;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .container-list__string {
+    width: 100% !important;
+  }
+  .container {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+  .container__list {
+    width: 95%;
+    padding-left: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
